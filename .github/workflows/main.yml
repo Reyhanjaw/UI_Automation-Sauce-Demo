@@ -24,7 +24,7 @@ jobs:
       - name: Run UI automation tests
         run: |
           chmod +x gradlew
-          ./gradlew clean test
+          ./gradlew clean test --info
 
       - name: Upload test reports
         if: always()
