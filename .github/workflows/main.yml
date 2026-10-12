@@ -21,6 +21,16 @@ jobs:
           distribution: temurin
           java-version: '25'
 
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+      
+      - name: Check Chrome installation
+        run: |
+          google-chrome --version
+
+
       - name: Run UI automation tests
         run: |
           chmod +x gradlew
