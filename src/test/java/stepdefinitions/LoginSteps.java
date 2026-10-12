@@ -30,7 +30,6 @@ public class LoginSteps {
     
     @Before
     public void setUp() {
-        driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
     
         options.addArguments("--headless=new");
